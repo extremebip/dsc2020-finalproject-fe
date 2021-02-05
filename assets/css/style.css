@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    background-color: #CDCDCD;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #676767;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.navbar-item {
+    padding: 0.5rem;
+    vertical-align: middle;
+    margin: auto 1rem;
+}
+
+.navbar-left .navbar-item:first-child {
+    margin-left: 0;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a.navbar-item {
+    text-decoration: none;
+    text-decoration-color: inherit;
+    color: inherit;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+a.navbar-item:hover {
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    display: none;
+    margin: auto 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggler img {
+    height: 1.5rem;
+}
+
+.wrapper {
+    padding: 1.25rem;
+}
+
+.rounded-box {
+    border-radius: 10px;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+@media screen and (max-width: 798px){
+    .navbar-item:not(.navbar-title) {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        display: block;
+        float: right;
+        top: 16.5px;
+        right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-left {
+        flex-direction: column;
+    }
+
+    .navbar-right {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .navbar-left .navbar-item:first-child {
+        margin-left: 1rem;
+    }
+
+    .navbar-item.show {
+        display: block;
+    }
+}

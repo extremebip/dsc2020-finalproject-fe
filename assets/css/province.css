@@ -1,0 +1,103 @@
+.content-header {
+    display: flex;
+}
+
+.loading {
+    height: 1rem;
+    width: 1rem;
+    margin: auto 0.25rem;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 1.75rem;
+    width: fit-content;
+    background-color: #E2E2E2;
+}
+
+.search-bar-icon {
+    margin: auto 0.25rem;
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+#search-bar {
+    border: none;
+    background-color: #E2E2E2;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100vw - 3.75rem + 1.75rem);
+    margin-left: -1.75rem;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 525px;
+    min-width: 450px;
+    width: 100%;
+    width: calc((100vw - 1.5rem)/2);
+    margin: 1rem 0 1.75rem 1.75rem;
+    text-align: center;
+}
+
+.content-box-title {
+    display: flex;
+    position: relative;
+    margin: 0.25rem;
+}
+
+.province-name {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.content-box h2 {
+    margin: 0;
+}
+
+.statistic {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    font-weight: 800;
+}
+
+.statistic h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.statistic h3:first-child{
+    text-align: right;
+    margin-right: 1.5rem;
+    width: 50%;
+}
+
+.statistic h3:last-child {
+    margin-right: auto;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:1272px){
+    .content {
+        justify-content: center;
+    }
+}

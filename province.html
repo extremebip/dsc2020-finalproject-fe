@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Province List</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/province.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-item navbar-title">COVID-19</div>
+            <a class="navbar-item" href="index.html">Beranda</a>
+            <a class="navbar-item active" href="province.html">Data Provinsi</a>
+        </div>
+        <div class="navbar-right">
+            <div class="navbar-item">
+                LAYANAN DARURAT 0811 1211 2112
+            </div>
+        </div>
+        <button class="navbar-toggler">
+            <img src="./assets/icons/burger_bar.png">
+        </button>
+    </nav>
+    <div class="wrapper">
+        <div class="content-header">
+            <img src="./assets/icons/loading.gif" alt="" class="loading ml-auto">
+            <div class="search-bar-wrapper rounded-box">
+                <img src="./assets/icons/magnifying_glass.png" class="search-bar-icon">
+                <input class="rounded-box" type="text" id="search-bar">
+            </div>
+        </div>
+        <div class="content"></div>
+    </div>
+</body>
+
+<div class="content-box hide" id="template-provinsi">
+    <div class="content-box-title">
+        <h2 class="number"></h2>
+        <h2 class="province-name"></h2>
+    </div>
+    <div class="statistic">
+        <h3 class="positive-number"></h3>
+        <h3>Positive</h3>
+    </div>
+    <div class="statistic">
+        <h3 class="recovered-number"></h3>
+        <h3>Recovered</h3>
+    </div>
+    <div class="statistic">
+        <h3 class="death-number"></h3>
+        <h3>Death</h3>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/province.js"></script>
+
+</html>
